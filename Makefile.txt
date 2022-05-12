@@ -1,0 +1,23 @@
+OBJS = manne_rishabh_assn5.o conga.o zombie.o
+CC = g++
+DEBUG = -g
+CFLAGS = -Wall -c $(DEBUG)
+LFLAGS = $(DEBUG) -Wall 
+
+exe: $(OBJS)
+	$(CC) $(LFLAGS)$(OBJS) -o exe
+
+manne_rishabh_assn5.o : manne_list.h conga.h zombie.h
+	$(CC) $(CFLAGS) manne_rishabh_assn5.cpp
+
+conga.o : conga.h zombie.h
+	$(CC) $(CFLAGS) conga.cpp
+
+zombie.o : zombie.h  
+	$(CC) $(CFLAGS) zombie.cpp
+
+
+clean:
+	rm *.o exe
+
+

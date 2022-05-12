@@ -1,5 +1,5 @@
 # zombieCongaLine
-This project consists of two parts; a flood fill algorithm that populates a dynamically allocated 2D array and a path finder that tracks the path from a starting position to an ending position.
+This project consists of a templated LinkedList that would be able to hold Zombie objects. As a means of emphasizing object-oriented programming, the Zombie class has its own variables and functions that specify its configuration. A separate Conga class is used to perform functions on the LinkedList upon a randomized number of actions specified by the user.
 
 These are the instructions for using my makefile to run my code:
 
